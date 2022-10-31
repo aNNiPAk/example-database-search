@@ -1,1 +1,1 @@
-import './app/index.js'
+require('./app/index')
