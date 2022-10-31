@@ -1,6 +1,8 @@
+const {db} = require('./db')
+
 const FindTextInDB = async (tableName, searchText) => {
-    console.log(`${tableName} ${searchText}`)
-    return 1
+    const result = await db.query(`SELECT * FROM table1`, [])
+    console.log(result)
 }
 
 module.exports = {FindTextInDB}
