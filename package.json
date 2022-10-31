@@ -1,0 +1,26 @@
+{
+  "name": "example-database-search",
+  "version": "1.0.0",
+  "description": "This project contains a solution to the task of searching for records in the database table.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNNiPAk/example-database-search.git"
+  },
+  "author": "aNNiPAk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aNNiPAk/example-database-search/issues"
+  },
+  "homepage": "https://github.com/aNNiPAk/example-database-search#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  },
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}
