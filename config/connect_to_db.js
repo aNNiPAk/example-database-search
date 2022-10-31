@@ -8,4 +8,4 @@ const db = new Pool({
     database: 'example_db',
 })
 
-module.exports = {db}
+module.exports = {db: db}

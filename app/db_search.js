@@ -1,4 +1,4 @@
-const {db} = require('./db')
+const {db} = require('../config/connect_to_db')
 
 const FindTextInDB = async (tableName, searchText) => {
     if (tableName === '') {
@@ -10,7 +10,7 @@ const FindTextInDB = async (tableName, searchText) => {
         ORDER BY name, description`
 
     const queryResult = await db.query(query)
-    
+
     if (queryResult.rowCount > 20) {
         return {
             data: queryResult.rows.slice(0, 20),
