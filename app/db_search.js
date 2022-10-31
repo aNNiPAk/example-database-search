@@ -1,6 +1,10 @@
 const {db} = require('./db')
 
 const FindTextInDB = async (tableName, searchText) => {
+    if (tableName === '') {
+        throw new Error('Table name should not is empty')
+    }
+
     const query = `SELECT * FROM ${tableName} 
         WHERE lower(name) like '%${searchText.toLowerCase()}%' or lower(description) like '%${searchText.toLowerCase()}%'
         ORDER BY name, description`
